@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found</title>
+<style>body{font:18px system-ui,sans-serif;max-width:42rem;margin:15vh auto;padding:1.5rem;color:#17201c;background:#fafaf7}a{color:#215d42}</style>
+<script>
+const legacyPrefix = /^\/(?:vendune|sellm|sellama)(?=\/|$)/;
+if (legacyPrefix.test(window.location.pathname)) {
+  const path = window.location.pathname.replace(legacyPrefix, "/veyndo");
+  const target = new URL(path + window.location.search + window.location.hash, "https://sthamann.github.io");
+  window.location.replace(target.href);
+}
+</script>
+</head>
+<body><h1>Page not found</h1><p>If you followed an earlier project documentation link, this page redirects to its current address.</p><p><a href="https://sthamann.github.io/veyndo/docs/">Open VEYNDO documentation</a></p></body>
+</html>
