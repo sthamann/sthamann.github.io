@@ -7,7 +7,7 @@
 <title>Page not found</title>
 <style>body{font:18px system-ui,sans-serif;max-width:42rem;margin:15vh auto;padding:1.5rem;color:#17201c;background:#fafaf7}a{color:#215d42}</style>
 <script>
-const legacyPrefix = /^\/(?:vendune|sellm|sellama)(?=\/|$)/;
+const legacyPrefix = /^\/(?:rust-ai-commerce|vendune|sellm|sellama)(?=\/|$)/;
 if (legacyPrefix.test(window.location.pathname)) {
   const path = window.location.pathname.replace(legacyPrefix, "/veyndo");
   const target = new URL(path + window.location.search + window.location.hash, "https://sthamann.github.io");
